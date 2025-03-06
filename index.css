@@ -15,10 +15,12 @@ header{
     display: flex;
     justify-content: space-between;
     color: aliceblue;
+    font-size: 80%;
 }
 
 header img{
-    width: 5%;
+    width: 10%;
+    min-width: 10%;
     height: auto;
 }
 
@@ -35,7 +37,7 @@ nav ul{
 }
 
 nav li{
-    font-size: 4em;
+    font-size: 80%;
 }
 
 main{
@@ -87,7 +89,6 @@ footer{
     margin: 1%;
   }
   li{
-    font-size: 2em;
-    max-height: 2em;
+    font-size: 0.5em;
   }
 }
