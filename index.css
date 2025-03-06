@@ -17,8 +17,12 @@ header{
     color: aliceblue;
 }
 
+header img{
+    width: 5%;
+    height: auto;
+}
+
 nav{
-    font-size: 20px;
     color: aliceblue;
     background-color: rgb(38, 38, 160);
 }
@@ -30,10 +34,12 @@ nav ul{
     border: solid 1px black;
 }
 
+nav li{
+    font-size: 4em;
+}
+
 main{
     padding: 1em;
-
-
 }
 
 article{
@@ -79,5 +85,9 @@ footer{
   article{
     width: 30%;
     margin: 1%;
+  }
+  li{
+    font-size: 2em;
+    max-height: 2em;
   }
 }
