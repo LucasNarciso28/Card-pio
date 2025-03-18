@@ -89,11 +89,11 @@ footer{
     margin: 1%;
   }
   li{
-    font-size: 1%;
+    font-size: 3%;
   }
 }
-@media screen and(max-width: 900px){
+@media screen and(min-width: 900px){
     li{
-        font-size: 20%;
+        font-size: 5%;
     }
 }
