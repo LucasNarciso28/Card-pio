@@ -1,2 +1,2 @@
 # Card-pio
-Criação de um cardápio com responsividade.
+Correção da responsividade das fontes utilizadas.
