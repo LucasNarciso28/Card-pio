@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oásis</title>
     <link rel="stylesheet" href="index.css">
-    
+
 </head>
 <body>
-    <header><!--Nessa parte inclui informações pertencente ao que se refere ao cabeçalho do site-->
-        <h1>Oásis Restaurante</h1><!--Local onde apresenta o nome da loja fictícia-->
-        <img src="https://cdn-icons-png.flaticon.com/512/2209/2209792.png" alt="logo da empresa, uma gota de água"><!--Espaço para a logo escolhida para a representação-->
+    <header>
+        <h1>Oásis Restaurante</h1>
+        <!-- Added Cart Counter Display -->
+        <div class="cart-info">
+            🛒 <span id="cart-count">0</span> Itens
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/2209/2209792.png" alt="logo da empresa, uma gota de água">
     </header>
 
-    <nav><!--Um pequeno menu (ainda não funcional) para uma pesquisa dentro do site ou dependências-->
+    <nav>
         <ul>
-            <li>Pratos</li><!--Guiaria o cliente para a parte do cardápio, onde mostra os pratos que preparamos. Até o momemento, esta página já é página de pratos-->
-            <li>Ingredientes</li><!--Mostraria as dependências onde são retiradas os ingredientes para expor a responsabilidade com a qualidade.-->
-            <li>Compromisso da empresa</li> <!--Mostraria a preocupação da empresa com seus ideais e com o público/trabalhadores.-->
+            <li>Pratos</li>
+            <li>Ingredientes</li>
+            <li>Compromisso da empresa</li>
         </ul>
     </nav>
 
-    <main><!--Dentro do main vou expor os conteúdos principais, aqui no caso, os pratos. -->
-        <article id="cardapio-container">
-        </article>
-        <script src="index.js"></script>
-    </main>
+    <main>
+        <!-- Added Filter Controls Section -->
+        <section id="filter-controls" aria-labelledby="filter-label">
+            <h2 id="filter-label" class="visually-hidden">Filtrar por categoria</h2>
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="bebida">Bebidas</button>
+            <button class="filter-btn" data-filter="acompanhamento">Acompanhamentos</button>
+            <button class="filter-btn" data-filter="principal">Principais</button>
+            <button class="filter-btn" data-filter="vegetariano">Vegetarianos</button>
+            <button class="filter-btn" data-filter="sem-lactose">Sem Lactose</button>
+        </section>
 
-    <footer><!--Informações acerca dos domínios do site (nome da empresa e última atualização do site.-->
+        <!-- Cardapio items will be injected here -->
+        <section id="cardapio-container" aria-live="polite">
+            <!-- Menu items will be rendered here by JavaScript -->
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+
+    <footer>
         © Oásis Restaurante 2025
     </footer>
 </body>
